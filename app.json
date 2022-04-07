@@ -1,0 +1,35 @@
+{
+    "name": "SAHİP UYE",
+    "description": "UYE BOTU.",
+    "logo": "https://telegra.ph//file/7daf3949556682f549517.jpg",
+    "keywords": [
+        "uye",
+        "sahip",
+        "sonsahip",
+        "arte",
+        "telegrambot"
+    ],
+    "repository": "https://github.com/SonSahip/sahipuyebot",
+    "success_url": "https://t.me/SonSahip",
+    "image": "heroku/python",
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "env": {
+        "UPDATES_CHANNEL": {
+            "description": "Kanal Kullanıcı Adını Girin...(@ veya link olmadan!!!)",
+            "value": "",
+            "required": true
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/SonSahip/sahipuyebot"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
