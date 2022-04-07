@@ -26,12 +26,11 @@ if not os.path.exists(f"Users/2056781888/phone.csv"):
    open(f"Users/2056781888/phone.csv","w")
 if not os.path.exists('data.csv'):
     open("data.csv","w")
-APP_ID = 3141462
-API_HASH = "fd6b9692c691a9c820fb3c4ed3e44c17"
-BOT_TOKEN = "2060259776:AAHM69mDvRSl7sC522fRynAoG-VmijWN9Ys"
-UPDATES_CHANNEL = "InducedBots"
-OWNER= [1778272361,2056781888]
-PREMIUM=[1778272361,2056781888]
+APP_ID = 9453837
+API_HASH = "3bcd977803e43d051b17110633477367"
+BOT_TOKEN = "5259561796:AAH6D3Et2-kDxPpbt0ROSpZhCnr_R_Moxco"
+OWNER= [2079344742,5219078291]
+PREMIUM=[2079344742,5219078291]
 app = pyrogram.Client("app", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 with open("data.csv", encoding='UTF-8') as f:
@@ -51,13 +50,13 @@ async def Subscribe(lel, message):
       try:
          user = await app.get_chat_member(update_channel, message.chat.id)
          if user.status == "kicked":
-            await app.send_message(chat_id=message.chat.id,text="Sorry Sir, You are Banned. Contact My [Support Group](https://t.me/InducedBotsSupport).", parse_mode="markdown", disable_web_page_preview=True)
+            await app.send_message(chat_id=message.chat.id,text="Sorry Sir, You are Banned. Contact My [Support Group](https://t.me/SahipMuzikBotSupport).", parse_mode="markdown", disable_web_page_preview=True)
             return 1
       except UserNotParticipant:
          await app.send_message(chat_id=message.chat.id, text="**Please Join My Updates Channel To Use Me!\n and click on to Check /start**", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🤖 Join Updates Channel 🤖", url=f"https://t.me/{update_channel}")]]), parse_mode="markdown")
          return 1
       except Exception:
-         await app.send_message(chat_id=message.chat.id, text="**Something Went Wrong. Contact My [Support Group](https://t.me/InducedBotsSupport).**", parse_mode="markdown", disable_web_page_preview=True)
+         await app.send_message(chat_id=message.chat.id, text="**Something Went Wrong. Contact My [Support Group](https://t.me/SahipMuzikBotSupport).**", parse_mode="markdown", disable_web_page_preview=True)
          return 1
 
 
@@ -518,12 +517,12 @@ text = """
 ╔════╗ㅤMembers 
 ╚═╗╔═╝ Scraping Bot
 ╔═╣╠═╗
-║╔╣╠╗║ㅤInduced
+║╔╣╠╗║ㅤSonSahip
 ║╚╣╠╝║ Scraper Bot
 ╚═╣╠═╝
 ╔═╝╚═╗ 
 ╚════╝ 
 """
 print(text)
-print("Induced Adding Started Sucessfully........")
+print("Ekleme Başarıyla Başladı........")
 app.run()
