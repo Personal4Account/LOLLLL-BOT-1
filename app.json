@@ -23,6 +23,7 @@
             "description": "Kanal Kullanıcı Adını Girin...(@ veya link olmadan!!!)",
             "value": "",
             "required": true
+        }
     },
     "buildpacks": [
         {
